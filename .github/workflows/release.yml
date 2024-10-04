@@ -22,9 +22,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check Environment Variables
-        run: printenv | grep TOKEN
-
       - name: Install dependencies
         run: yarn install
 
