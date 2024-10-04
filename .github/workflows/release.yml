@@ -17,6 +17,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Check GH_TOKEN
+        run: echo "GH_TOKEN is set"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Install dependencies
         run: yarn install
 
