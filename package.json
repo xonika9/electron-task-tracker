@@ -2,6 +2,8 @@
   "name": "electron-task-tracker",
   "private": true,
   "version": "0.0.0",
+  "description": "Task tracking application built with Electron",
+  "author": "xonika9",
   "type": "module",
   "scripts": {
     "start": "concurrently \"vite\" \"yarn electron\"",
@@ -28,7 +30,14 @@
     },
     "linux": {
       "target": "AppImage"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "xonika9",
+        "repo": "electron-task-tracker"
+      }
+    ]
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

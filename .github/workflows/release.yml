@@ -29,6 +29,6 @@ jobs:
         run: yarn build
 
       - name: Publish Release
-        run: yarn electron-builder --publish=always
+        run: yarn electron-builder --publish=always --token=$GH_TOKEN
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
